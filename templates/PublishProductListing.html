@@ -25,6 +25,7 @@
     </main>
 </div>
 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Welcome to Nittany Market</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -274,7 +275,11 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="/login">Log In  <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/PublishProductListing"> Publish New Listing <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/checkingInfoSeller">My Account  <span class="sr-only">(current)</span></a>
             </li>
 
         </ul>
@@ -290,27 +295,63 @@
 
 </nav>
 
-
 <div class="container">
 
     <div class="row">
         <div class="col-12">
             <div class="row mb-5 gx-5">
                 <div class="bg-secondary-soft px-4 py-5 rounded">
-                    <h2 class="card-title"><p style="font-family: Serif">Clothing > Bottoms > Pants</p></h2>
-                    <form action="/Clothing/Bottoms/Pants" method="POST">
+                    <h2 class="card-title"><p style="font-family: Serif"> Publish New Listing </p></h2>
+                    <p style="font-family: Serif">Fill in all the information for your new listing</p>
+
+                    <form action="/PublishProductListing" method="POST">
                         <div class="form-group">
-                            {% for Listing_ID,Title, Product_Name in prod %}
-                                <h5><a href="/items/{{ Listing_ID }}" >{{ Title }} : {{Product_Name}}</a></h5>
-                            {% endfor %}
+                            <label for="category">Category</label>
+                            <input type="text" name="category" required class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="prod_name">Product Name</label>
+                            <input type="text" name="prod_name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="prod_desc">Product Description</label>
+                            <input type="text" name="prod_desc" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="text" name="price" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" name="quantity" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="listing_ID">Listing ID</label>
+                            <input type="text" name="listing_ID" required class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" required class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Publish</button>
+                        <a class="btn btn-outline-success" href="/" role="button">Cancel</a>
                     </form>
+
 
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 </div>
 
