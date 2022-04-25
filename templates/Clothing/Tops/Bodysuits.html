@@ -25,268 +25,255 @@
     </main>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Welcome to Nittany Market</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/home">Home</a>
+        </li>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/home">Home</a>
-            </li>
-
-            <!--Dropdown -->
-            <div class="btn-group dropright">
-                <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Category
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <!-- dropdown Clothing -->
-                        <li>
+        <!--Dropdown -->
+        <div class="btn-group dropright">
+            <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- dropdown Clothing -->
+                    <li>
+                        <form action="/bath" method="GET">
                             <a  class="dropdown-item dropdown-toggle" href=/Clothing"  role="button" data-toggle="dropdown">
                                 Clothing
                             </a>
                             <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="/Clothing"  role="button" data-toggle="dropdown" >Tops </a>
+                                <ul ><a class="dropdown-item dropdown-toggle" href="/Clothing/Tops"  role="button" data-toggle="dropdown" >Tops </a>
                                     <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="/Clothing"  role="button" >Bodysuits </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Long Sleeves </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >T-Shirts</a>
+                                        <a class="dropdown-item" href="/Clothing/Tops/Bodysuits"  role="button" >Bodysuits </a>
+                                        <a class="dropdown-item" href="/Clothing/Tops/Long Sleeves"  role="button"  >Long Sleeves </a>
+                                        <a class="dropdown-item" href="/Clothing/Tops/T-Shirts"  role="button" >T-Shirts</a>
                                     </ul>
                                 </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Bottoms </a>
+                                <ul><a class="dropdown-item dropdown-toggle" href="/Clothing/Bottoms"  role="button" data-toggle="dropdown" >Bottoms </a>
                                     <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Pants </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Skirts </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Jeans</a>
+                                        <a class="dropdown-item" href="/Clothing/Bottoms/Pants"  role="button" >Pants </a>
+                                        <a class="dropdown-item" href="/Clothing/Bottoms/Skirts"  role="button" >Skirts </a>
+                                        <a class="dropdown-item" href="/Clothing/Bottoms/Jeans"  role="button"  >Jeans</a>
                                     </ul>
                                 </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Sleepwear </a>
+                                <ul><a class="dropdown-item dropdown-toggle" href="/Clothing/Sleepwear"  role="button" data-toggle="dropdown" >Sleepwear </a>
                                     <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Bath Robes </a>
-                                    </ul>
-                                </ul>
-                            </ul>
-                        </li>
-
-                        <!-- dropdown Elec Supplies -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown"> Electrical Supplies</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item " href="#"  role="button" >Cell Phones </a></ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Tv & Home Theater </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >75-Inch Tvs </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >65-Inch Tvs </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >55-Inch Tvs</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Wearable Technology </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Apple Watch </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Headphones</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Wireless Headphones </a>
+                                        <a class="dropdown-item" href="/Clothing/Sleepwear/Bath Robes"  role="button" required-class="form-control" >Bath Robes </a>
                                     </ul>
                                 </ul>
                             </ul>
-                        </li>
+                        </form>
+                    </li>
 
-                        <!-- dropdown Beauty Prods -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Beauty Products</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Makeup </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" > Face </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Lip</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Brushes & Applicators</a>
-                                    </ul>
+                    <!-- dropdown Elec Supplies -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown"> Electrical Supplies</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item " href="/Electrical Supplies/Cell Phones"  role="button" >Cell Phones </a></ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Electrical Supplies/Tv & Home Theater"  role="button" data-toggle="dropdown" >Tv & Home Theater </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Electrical Supplies/Tv & Home Theater/75-Inch Tvs"  role="button" >75-Inch Tvs </a>
+                                    <a class="dropdown-item" href="/Electrical Supplies/Tv & Home Theater/65-Inch Tvs"  role="button" >65-Inch Tvs </a>
+                                    <a class="dropdown-item" href="/Electrical Supplies/Tv & Home Theater/55-Inch Tvs"  role="button" >55-Inch Tvs</a>
                                 </ul>
                             </ul>
-                        </li>
-
-                        <!-- dropdown Kitchen & Appliances -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Kitchen & Appliances</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Kitchen & Cooking Accessories </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Kitchen Utensils </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Mixing & Measuring Tools </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Cooking Accessories</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Kitchen Cabinets </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Wall Cabinets</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >High Cabinets </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Base Cabinets</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Kitchen Faucets & Sinks </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" > Kitchen Sinks </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Kitchen Faucets</a>
-                                    </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Electrical Supplies/Wearable Technology"  role="button" data-toggle="dropdown" >Wearable Technology </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Electrical Supplies/Wearable Technology/Apple Watch "  role="button" >Apple Watch </a>
+                                    <a class="dropdown-item" href="/Electrical Supplies/Wearable Technology/Headphones"  role="button" >Headphones</a>
+                                    <a class="dropdown-item" href="/Electrical Supplies/Wearable Technology/Wireless Headphones"  role="button" >Wireless Headphones </a>
                                 </ul>
                             </ul>
-                        </li>
+                        </ul>
+                    </li>
 
-                        <!-- Toys & Vid Games -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Toys & Video Games</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item " href="#"  role="button" >Toys </a></ul>
-                                <ul><a class="dropdown-item " href="#"  role="button" >Video Games </a></ul>
-                                <ul><a class="dropdown-item " href="#"  role="button">Outdoor Play </a></ul>
-                            </ul>
-                        </li>
-
-                        <!-- dropdown Pharmacy -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Pharmacy, Health & Wellness</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Health Care </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Cough, Cold & Flu </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Pain Relievers</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Eye Care</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Wellness </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Sleep Support</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Performance Nutrition</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Weight Loss</a>
-                                    </ul>
-                                </ul>
-
-                            </ul>
-                        </li>
-
-                        <!-- dropdown Pets -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Pets</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Cat</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Cat Dry Food </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Cat Wet Food </a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Climbing Trees</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Dog </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Dog Dry Food</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Dog Wet Food</a>
-                                        <a class="dropdown-item" href="#"  role="button" data-toggle="dropdown" >Dog Beds</a>
-                                    </ul>
-                                </ul>
-
-                            </ul>
-                        </li>
-
-                        <!-- dropdown Sports & Outdoors -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">
-                                Sports & Outdoors
-                            </a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Sports</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Baseball</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Basketball</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Tennis</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Bikes</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Electric</a>
-                                        <a class="dropdown-item" href="#"  role="button"  >Mountain</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Exercise & Fitness</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" > Boxing & Mma </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Exercise Machines</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Yoga </a>
-                                    </ul>
+                    <!-- dropdown Beauty Prods -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Beauty Products"  role="button" data-toggle="dropdown">Beauty Products</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Beauty Products/Makeup"  role="button" data-toggle="dropdown" >Makeup </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Beauty Products/Makeup/Face"  role="button" > Face </a>
+                                    <a class="dropdown-item" href="/Beauty Products/Makeup/Lip"  role="button">Lip</a>
+                                    <a class="dropdown-item" href="/Beauty Products/Makeup/Brushes & Applicators"  role="button" >Brushes & Applicators</a>
                                 </ul>
                             </ul>
-                        </li>
+                        </ul>
+                    </li>
 
-                        <!-- dropdown Paio & GArdrb-->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Patio & Garden</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Outdoor Decor </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Outdoor Cushions </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Outdoor Lighting</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Patio Furniture</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Patio Conversation Sets</a>
-                                        <a class="dropdown-item" href="#"  role="button">Patio Dining Sets </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Porch Swings</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Indoor & Live Plants</a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" > Annuals  </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Plant Gifts</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Indoor Plants</a>
-                                    </ul>
+                    <!-- dropdown Kitchen & Appliances -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Kitchen & Appliances"  role="button" data-toggle="dropdown">Kitchen & Appliances</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="/Kitchen & Appliances/Kitchen & Cooking Accessories"  role="button" data-toggle="dropdown" >Kitchen & Cooking Accessories </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen & Cooking Accessories/Kitchen Utensils"  role="button" >Kitchen Utensils </a>
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen & Cooking Accessories/Mixing & Measuring Tools"  role="button" data-toggle="dropdown" >Mixing & Measuring Tools </a>
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen & Cooking Accessories/Cooking Accessories"  role="button" data-toggle="dropdown" >Cooking Accessories</a>
                                 </ul>
                             </ul>
-                        </li>
-
-                        <!-- dropdown Grocery -->
-                        <li>
-                            <a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown">Grocery</a>
-                            <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul ><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Bakery & Bread </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Rolls & Buns </a>
-                                        <a class="dropdown-item" href="#"  role="button" >Cookies & Brownies </a>
-                                        <a class="dropdown-item" href="#"  role="button"  >Pies</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item dropdown-toggle" href="#"  role="button" data-toggle="dropdown" >Meat & Seafood </a>
-                                    <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"  role="button" >Seafood</a>
-                                        <a class="dropdown-item" href="#"  role="button" >Pork</a>
-                                        <a class="dropdown-item" href="#"  role="button"  >Beef & Lamb'</a>
-                                    </ul>
-                                </ul>
-                                <ul><a class="dropdown-item" href="#"  role="button"  >Fresh Produce</a>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Kitchen & Appliances/Kitchen Cabinets"  role="button" data-toggle="dropdown" >Kitchen Cabinets </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen Cabinets/Wall Cabinets"  role="button" >Wall Cabinets</a>
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen Cabinets/High Cabinets"  role="button"  >High Cabinets </a>
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen Cabinets/Base Cabinets"  role="button" >Base Cabinets</a>
                                 </ul>
                             </ul>
-                    </ul>
-                </li>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Kitchen & Appliances/Kitchen Faucets & Sinks"  role="button" data-toggle="dropdown" >Kitchen Faucets & Sinks </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen Faucets & Sinks/Kitchen Sinks"  role="button" > Kitchen Sinks </a>
+                                    <a class="dropdown-item" href="/Kitchen & Appliances/Kitchen Faucets & Sinks/Kitchen Faucets"  role="button" >Kitchen Faucets</a>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
 
-            </div>
+                    <!-- Toys & Vid Games -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Toys & Video Games"  role="button" data-toggle="dropdown">Toys & Video Games</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item " href="/Toys & Video Games/Toys"  role="button" >Toys </a></ul>
+                            <ul><a class="dropdown-item " href="/Toys & Video Games/Video Games"  role="button" >Video Games </a></ul>
+                            <ul><a class="dropdown-item " href="/Toys & Video Games/Outdoor Play"  role="button">Outdoor Play </a></ul>
+                        </ul>
+                    </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/login">Log In  <span class="sr-only">(current)</span></a>
+                    <!-- dropdown Pharmacy -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Pharmacy, Health & Wellness"  role="button" data-toggle="dropdown">Pharmacy, Health & Wellness</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="/Pharmacy, Health & Wellness/Health Care"  role="button" data-toggle="dropdown" >Health Care </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Health Care/Cough, Cold & Flu "  role="button" >Cough, Cold & Flu </a>
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Health Care/Pain Relievers"  role="button"  >Pain Relievers</a>
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Health Care/Eye Care"  role="button" >Eye Care</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Pharmacy, Health & Wellness/Wellness"  role="button" data-toggle="dropdown" >Wellness </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Wellness/Sleep Support"  role="button" >Sleep Support</a>
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Wellness/Performance Nutrition"  role="button" >Performance Nutrition</a>
+                                    <a class="dropdown-item" href="/Pharmacy, Health & Wellness/Wellness/Weight Loss"  role="button" >Weight Loss</a>
+                                </ul>
+                            </ul>
+
+                        </ul>
+                    </li>
+
+                    <!-- dropdown Pets -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Pets"  role="button" data-toggle="dropdown">Pets</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="/Pets/Cat"  role="button" data-toggle="dropdown" >Cat</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Pets/Cat/Cat Dry Food"  role="button" >Cat Dry Food </a>
+                                    <a class="dropdown-item" href="/Pets/Cat/Cat Wet Food"  role="button" data-toggle="dropdown" >Cat Wet Food </a>
+                                    <a class="dropdown-item" href="/Pets/Cat/Climbing Trees"  role="button" data-toggle="dropdown" >Climbing Trees</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Pets/Dog"  role="button" data-toggle="dropdown" >Dog </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Pets/Dog/Dog Dry Food"  role="button" >Dog Dry Food</a>
+                                    <a class="dropdown-item" href="/Pets/Dog/Dog Wet Food"  role="button" data-toggle="dropdown" >Dog Wet Food</a>
+                                    <a class="dropdown-item" href="/Pets/Dog/Dog Beds"  role="button" data-toggle="dropdown" >Dog Beds</a>
+                                </ul>
+                            </ul>
+
+                        </ul>
+                    </li>
+
+                    <!-- dropdown Sports & Outdoors -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Sports & Outdoors"  role="button" data-toggle="dropdown">
+                            Sports & Outdoors
+                        </a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="Sports & Outdoors/Sports"  role="button" data-toggle="dropdown" >Sports</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="Sports & Outdoors/Sports/Baseball"  role="button" >Baseball</a>
+                                    <a class="dropdown-item" href="Sports & Outdoors/Sports/Basketball"  role="button" >Basketball</a>
+                                    <a class="dropdown-item" href="Sports & Outdoors/Sports/Tennis"  role="button" >Tennis</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="Sports & Outdoors/Bikes"  role="button" data-toggle="dropdown" >Bikes</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="Sports & Outdoors/Bikes/Electric"  role="button" >Electric</a>
+                                    <a class="dropdown-item" href="Sports & Outdoors/Bikes/Mountain"  role="button"  >Mountain</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="Sports & Outdoors/Exercise & Fitness"  role="button" data-toggle="dropdown" >Exercise & Fitness</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="Sports & Outdoors/Exercise & Fitness/Boxing & Mma"  role="button" > Boxing & Mma </a>
+                                    <a class="dropdown-item" href="Sports & Outdoors/Exercise & Fitness/Exercise Machines"  role="button" >Exercise Machines</a>
+                                    <a class="dropdown-item" href="Sports & Outdoors/Exercise & Fitness/Yoga"  role="button" >Yoga </a>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+
+                    <!-- dropdown Paio & GArdrb-->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Patio & Garden"  role="button" data-toggle="dropdown">Patio & Garden</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="/Patio & Garden/Outdoor Decor"  role="button" data-toggle="dropdown" >Outdoor Decor </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Patio & Garden/Outdoor Decor/Outdoor Cushions"  role="button" >Outdoor Cushions </a>
+                                    <a class="dropdown-item" href="/Patio & Garden/Outdoor Decor/Outdoor Lighting"  role="button" >Outdoor Lighting</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Patio & Garden/Patio Furniture"  role="button" data-toggle="dropdown" >Patio Furniture</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Patio & Garden/Patio Furniture/Patio Conversation Sets"  role="button" >Patio Conversation Sets</a>
+                                    <a class="dropdown-item" href="/Patio & Garden/Patio Furniture/Patio Dining Sets"  role="button">Patio Dining Sets </a>
+                                    <a class="dropdown-item" href="/Patio & Garden/Patio Furniture/Porch Swings"  role="button" >Porch Swings</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Patio & Garden/Indoor & Live Plants"  role="button" data-toggle="dropdown" >Indoor & Live Plants</a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Patio & Garden/Indoor & Live Plants/Annuals"  role="button" > Annuals  </a>
+                                    <a class="dropdown-item" href="/Patio & Garden/Indoor & Live Plants/Plant Gifts"  role="button" >Plant Gifts</a>
+                                    <a class="dropdown-item" href="/Patio & Garden/Indoor & Live Plants/Indoor Plants"  role="button" >Indoor Plants</a>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+
+                    <!-- dropdown Grocery -->
+                    <li>
+                        <a class="dropdown-item dropdown-toggle" href="/Grocery"  role="button" data-toggle="dropdown">Grocery</a>
+                        <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul ><a class="dropdown-item dropdown-toggle" href="/Grocery/Bakery & Bread"  role="button" data-toggle="dropdown" >Bakery & Bread </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Grocery/Bakery & Bread/Rolls & Buns"  role="button" >Rolls & Buns </a>
+                                    <a class="dropdown-item" href="/Grocery/Bakery & Bread/Cookies & Brownies"  role="button" >Cookies & Brownies </a>
+                                    <a class="dropdown-item" href="/Grocery/Bakery & Bread/Pies"  role="button"  >Pies</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item dropdown-toggle" href="/Grocery/Meat & Seafood"  role="button" data-toggle="dropdown" >Meat & Seafood </a>
+                                <ul class="dropdown-submenu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="/Grocery/Meat & Seafood/Seafood"  role="button" >Seafood</a>
+                                    <a class="dropdown-item" href="/Grocery/Meat & Seafood/Pork"  role="button" >Pork</a>
+                                    <a class="dropdown-item" href="/Grocery/Meat & Seafood/Beef & Lamb"  role="button"  >Beef & Lamb</a>
+                                </ul>
+                            </ul>
+                            <ul><a class="dropdown-item" href="/Grocery/Fresh Produce"  role="button"  >Fresh Produce</a>
+                            </ul>
+                        </ul>
+                </ul>
             </li>
 
-        </ul>
+        </div>
 
-    </div>
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Log In  <span class="sr-only">(current)</span></a>
+        </li>
 
+    </ul>
 
-
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-
-</nav>
+</div>
 
 
 <div class="container">
@@ -296,9 +283,13 @@
             <div class="row mb-5 gx-5">
                 <div class="bg-secondary-soft px-4 py-5 rounded">
                     <h2 class="card-title"><p style="font-family: Serif">Clothing > Tops > Bodysuits</p></h2>
-                    {% for Product_name in prod %}
-                        <h5><a href="#"> {{ Product_name}}</a></h5>
-                    {% endfor %}
+                    <form action="/Clothing/Tops/Bodysuits" method="POST">
+                        <div class="form-group">
+                            {% for Listing_ID,Title, Product_Name in prod %}
+                                <h5><a href="/items/{{ Listing_ID }}" >{{ Title }} : {{Product_Name}}</a></h5>
+                            {% endfor %}
+                        </div>
+                    </form>
 
                 </div>
             </div>

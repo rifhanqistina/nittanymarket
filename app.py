@@ -432,18 +432,94 @@ def items(prod_id):
 @app.route('/Clothing', methods=['POST', 'GET'])
 def clothing():
     error = None
-    prod = getallClothing("Clothing")
-    return render_template('Clothing.html', prod=prod)
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                            FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        for x in result:
+            print(x)
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing.html', prod=getallsubCategoryListing("Clothing"))
 
 @app.route('/Clothing/Tops/Bodysuits', methods=['POST', 'GET'])
 def bodysuits():
     error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                            FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        for x in result:
+            print(x)
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Tops/Bodysuits.html', prod=getallsubCategoryListing("bodysuit"))
 
-    if request.method == 'GET':
-        prod = getallClothing("Bodysuits")
-        if prod:
-            return render_template('Clothing/Tops/Bodysuits.html', error=error, prod=prod)
-    return render_template('Clothing/Tops/Bodysuits.html')
+@app.route('/Clothing/Tops/Long Sleeve', methods=['POST', 'GET'])
+def long_sleeve():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                            FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        for x in result:
+            print(x)
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Tops/Long Sleeve.html', prod=getallsubCategoryListing("Long Sleeve"))
+
+@app.route('/Clothing/Tops/T-Shirts', methods=['POST', 'GET'])
+def tshirts():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                            FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        for x in result:
+            print(x)
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Tops/T-Shirts.html', prod=getallsubCategoryListing("t-shirts"))
+
+@app.route('/Clothing/Bottoms/Jeans', methods=['POST', 'GET'])
+def jeans():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                        FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Bottoms/Jeans.html', prod=getallsubCategoryListing("jeans"))
+
+@app.route('/Clothing/Bottoms/Pants', methods=['POST', 'GET'])
+def pants():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                        FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Bottoms/Pants.html', prod=getallsubCategoryListing("pants"))
+
+@app.route('/Clothing/Bottoms/Skirts', methods=['POST', 'GET'])
+def skirts():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                        FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Bottoms/Skirts.html', prod=getallsubCategoryListing("skirts"))
 
 @app.route('/Clothing/Sleepwear/Bath Robes', methods=['POST', 'GET'])
 def bathrobes():
@@ -454,16 +530,36 @@ def bathrobes():
         cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
                                         FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
         result = cursor.fetchall()
-        for x in result:
-            print(x)
         return render_template('items.html', error=error, result=result, cat=cat)
     return render_template('Clothing/Sleepwear/Bath Robes.html', prod=getallsubCategoryListing("bath robes"))
+
 
 @app.route('/Electrical Supplies', methods=['POST', 'GET'])
 def es():
     error = None
-    result = getCategory("Electrical Supplies")
-    return render_template('Electrical Supplies.html', result = result)
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                        FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Electrical Supplies.html', prod=getallsubCategoryListing("Electrical Supplies"))
+
+@app.route('/Electrical Supplies/Sleepwear/Bath Robes', methods=['POST', 'GET'])
+def cellphones():
+    error = None
+    cat = categorydropdown()
+    connection = sql.connect('database.db')
+    if request.method == 'POST':
+        cursor =connection.execute('''SELECT p.Seller_Email, p.Listing_ID, p.Product_Name, p.Product_Description, p.Price
+                                        FROM Products_Listings p WHERE p.Listing_ID=?''',(request.form['prod_id'],))
+        result = cursor.fetchall()
+        return render_template('items.html', error=error, result=result, cat=cat)
+    return render_template('Clothing/Sleepwear/Bath Robes.html', prod=getallsubCategoryListing("bath robes"))
+
+
+
 
 @app.route('/Beauty Products', methods=['POST', 'GET'])
 def bp():
